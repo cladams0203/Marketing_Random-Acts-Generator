@@ -132,7 +132,7 @@ table {
 html {
   font-size: 62.5%;
 }
-body {
+.container {
   background-image: url("/img/heartHandsSunset.jpg");
   height: 500px;
   background-attachment: fixed;
@@ -168,15 +168,36 @@ body {
 .main-content .main-p p {
   font-size: 3rem;
 }
-.appBtn {
+.btnpanel {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
-.appBtn img {
-  margin: 10px;
-  width: 10%;
+.btnpanel .ctaBtns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  margin-top: 50px;
+}
+.btnpanel .ctaBtns #apple {
+  width: 15%;
+  box-shadow: 1rem 1rem 1rem #464545;
+}
+.btnpanel .ctaBtns .login {
+  width: 15%;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: #fad190;
+  box-shadow: 1rem 1rem 1rem #464545;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 2px 2px white;
+}
+.btnpanel .ctaBtns #google {
+  width: 17%;
+  box-shadow: 1rem 1rem 1rem #464545;
 }
 footer {
   display: flex;
@@ -189,11 +210,12 @@ footer .footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 85%;
+  width: 75%;
 }
 footer .footer img {
   max-width: 75px;
   width: 7%;
+  box-shadow: 1rem 1rem 1rem #464545;
 }
 header {
   display: flex;
@@ -239,7 +261,7 @@ header {
   text-decoration: none;
   border-radius: 2rem;
   background-color: #fad190;
-  box-shadow: 5px 5px 5px #464545;
+  box-shadow: 1rem 1rem 1rem #464545;
   color: black;
   font-weight: bold;
   font-style: italic;
@@ -247,5 +269,5 @@ header {
 }
 .head-container .head-center h1 {
   text-align: center;
-  font-size: 6rem;
+  font-size: 5rem;
 }
