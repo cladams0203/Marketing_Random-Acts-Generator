@@ -1,0 +1,19 @@
+.testbor() {
+  border: 1px solid blue;
+}
+.flex(@justify, @align){
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.mobile-style() {
+  .flex(center, center);
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+
+.mbl-width() {
+  width:100%;
+}
