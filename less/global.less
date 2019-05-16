@@ -12,3 +12,45 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.main-content {
+  .flex(space-around, center);
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  h2 {
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .main-p {
+    .flex(space-around, center);
+    flex-wrap: wrap;
+    width: 60%;
+    margin-top: 50px;
+    padding: 40px;
+    .boxstyle();
+  
+    p {
+      font-size: 3rem;
+    }
+  }
+}
+
+footer {
+  .flex(space-around, center);
+  margin-top: 75px;
+  margin-bottom: 25px;
+  .footer{
+    .flex(space-around, center);
+    width: 85%;
+    img {
+      max-width: 75px;
+      width: 7%;
+    }
+  }
+}
+
+
