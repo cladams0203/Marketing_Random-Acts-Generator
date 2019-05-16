@@ -4,7 +4,7 @@
 html {
   font-size: 62.5%;
 }
-body {
+.container {
   background-image: url("/img/heartHandsSunset.jpg");
   height: 500px;
   background-attachment: fixed;
@@ -38,6 +38,33 @@ body {
     }
   }
 }
+.btnpanel{
+  .flex(center, center);
+  .ctaBtns {
+    .flex(space-between, center);
+    width: 60%;
+    margin-top: 50px;
+    #apple {
+      width: 15%;
+      .boxshadow();
+    }
+    .login {
+      width: 15%;
+      height: 4rem;
+      border-radius: 1rem;
+      background-color: @btncolor;
+      .boxshadow();
+      font-size: 2rem;
+      font-weight: bold;
+      font-style: italic;
+      text-shadow: 2px 2px 2px white;
+    }
+    #google {
+      width: 17%;
+      .boxshadow();
+    }
+  }
+}
 
 footer {
   .flex(space-around, center);
@@ -45,10 +72,11 @@ footer {
   margin-bottom: 25px;
   .footer{
     .flex(space-around, center);
-    width: 85%;
+    width: 75%;
     img {
       max-width: 75px;
       width: 7%;
+      .boxshadow();
     }
   }
 }
