@@ -227,6 +227,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #dfdffc;
   border-radius: 2rem;
   box-shadow: 1.5rem 1.5rem 1.5rem #464545;
@@ -270,4 +271,45 @@ header {
 .head-container .head-center h1 {
   text-align: center;
   font-size: 5rem;
+}
+.vidsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vidsection .viddiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 85%;
+}
+.vidsection .viddiv .videos {
+  width: 45%;
+  margin: 20px;
+}
+.vidsection .viddiv .paragraph {
+  width: 40%;
+}
+.vidsection .viddiv .paragraph p {
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  .head-container {
+    height: 120px;
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  .head-container .head-center nav a {
+    font-size: 1.5rem;
+    height: 25px;
+    width: 30%;
+    padding-top: 4px;
+  }
+}
+@media (max-width: 500px) {
+  .head-container .head-center h1 {
+    font-size: 3rem;
+  }
 }
