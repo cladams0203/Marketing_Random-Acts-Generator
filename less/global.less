@@ -27,15 +27,21 @@ html {
   }
 }
 
-h2 {
+.main-content h2 {
+  width:85%;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
+  .headingfont();
+  .textstyle();
 }
 
 p {
-  font-size: 3rem;
+  font-size: 2rem;
+  .pfont();
+  .smtextstyle();
+  text-indent: 2rem;
 }
 
 .btnpanel{
@@ -46,6 +52,7 @@ p {
     margin-top: 50px;
     #apple {
       width: 15%;
+      min-width: 75px;
       .boxshadow();
     }
     .login {
@@ -58,8 +65,10 @@ p {
       font-weight: bold;
       font-style: italic;
       text-shadow: 2px 2px 2px white;
+      min-width: 75px;
     }
     #google {
+      min-width: 80px;
       width: 17%;
       .boxshadow();
     }
@@ -68,7 +77,7 @@ p {
 
 footer {
   .flex(space-around, center);
-  margin-top: 75px;
+  margin-top: 50px;
   margin-bottom: 25px;
   .footer{
     .flex(space-around, center);

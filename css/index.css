@@ -159,14 +159,20 @@ html {
   border-radius: 2rem;
   box-shadow: 1.5rem 1.5rem 1.5rem #464545;
 }
-h2 {
+.main-content h2 {
+  width: 85%;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
+  font-family: 'Sigmar One', cursive;
+  text-shadow: 2px 2px 2px #464545;
 }
 p {
-  font-size: 3rem;
+  font-size: 2rem;
+  font-family: 'Boogaloo', cursive;
+  text-shadow: 1px 1px 1px #464545;
+  text-indent: 2rem;
 }
 .btnpanel {
   display: flex;
@@ -182,6 +188,7 @@ p {
 }
 .btnpanel .ctaBtns #apple {
   width: 15%;
+  min-width: 75px;
   box-shadow: 1rem 1rem 1rem #464545;
 }
 .btnpanel .ctaBtns .login {
@@ -194,8 +201,10 @@ p {
   font-weight: bold;
   font-style: italic;
   text-shadow: 2px 2px 2px white;
+  min-width: 75px;
 }
 .btnpanel .ctaBtns #google {
+  min-width: 80px;
   width: 17%;
   box-shadow: 1rem 1rem 1rem #464545;
 }
@@ -203,7 +212,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 75px;
+  margin-top: 50px;
   margin-bottom: 25px;
 }
 footer .footer {
@@ -256,6 +265,7 @@ header {
 .head-container .head-center nav a {
   font-size: 2rem;
   width: 20%;
+  min-width: 75px;
   height: 40px;
   padding-top: 8px;
   text-align: center;
@@ -270,29 +280,18 @@ header {
 }
 .head-container .head-center h1 {
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
+  font-family: 'Sigmar One', cursive;
+  text-shadow: 2px 2px 2px #464545;
 }
-.vidsection {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+h2 {
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 4rem;
 }
-.vidsection .viddiv {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 85%;
-}
-.vidsection .viddiv .videos {
-  width: 45%;
-  margin: 20px;
-}
-.vidsection .viddiv .paragraph {
-  width: 40%;
-}
-.vidsection .viddiv .paragraph p {
-  font-size: 3rem;
+.videos-container {
+  background-image: url("/img/holdingHandsCircle.jpg");
 }
 @media (max-width: 500px) {
   .head-container {
@@ -304,7 +303,8 @@ header {
   .head-container .head-center nav a {
     font-size: 1.5rem;
     height: 25px;
-    width: 30%;
+    width: 25%;
+    min-width: 50px;
     padding-top: 4px;
   }
 }
