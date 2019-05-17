@@ -272,6 +272,28 @@ header {
   text-align: center;
   font-size: 5rem;
 }
+.vidsection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vidsection .viddiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 85%;
+}
+.vidsection .viddiv .videos {
+  width: 45%;
+  margin: 20px;
+}
+.vidsection .viddiv .paragraph {
+  width: 40%;
+}
+.vidsection .viddiv .paragraph p {
+  font-size: 3rem;
+}
 @media (max-width: 500px) {
   .head-container {
     height: 120px;
