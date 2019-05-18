@@ -2,9 +2,9 @@ header {
   .flex(space-around, center);
   margin-top: 2%;
 }
-
 .head-container {
   .flex(space-around, center);
+  flex-wrap: wrap;
   .boxstyle();
   width: 85%;
   height: 175px;
@@ -20,13 +20,13 @@ header {
     height: 100%;
     // .testbor();
   
-
     nav {
       .flex(space-evenly, center);
       width: 100%;
       a {
         font-size: 2rem;
         width: 20%;
+        min-width:75px;
         height: 40px;
         padding-top: 8px;
         text-align: center;
@@ -38,19 +38,16 @@ header {
         font-weight: bold;
         font-style: italic;
         text-shadow: 2px 2px 2px white;
-
-        // .testbor();
       }
-      
     }
 
     h1 {
       text-align: center;
       font-size: 5rem;
-      // .testbor();
+      font-size: 4rem;
+      .headingfont();
+      .textstyle();
+
     }
-
   }
-  
 }
-

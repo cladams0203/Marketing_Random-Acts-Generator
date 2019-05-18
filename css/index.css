@@ -159,14 +159,35 @@ html {
   border-radius: 2rem;
   box-shadow: 1.5rem 1.5rem 1.5rem #464545;
 }
-h2 {
+
+.main-content h2 {
+  width: 85%;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
-  font-size: 4rem;
-}
-p {
   font-size: 3rem;
+  font-family: 'Sigmar One', cursive;
+  text-shadow: 2px 2px 2px #464545;
+}
+
+p {
+  font-size: 2rem;
+  font-family: 'Boogaloo', cursive;
+  text-shadow: 1px 1px 1px #464545;
+  text-indent: 2rem;
+}
+.paragraph{font-size: 2rem;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 80%;
+  text-align: center;
+  font-family: 'Boogaloo', cursive;
+  text-shadow: 1px 1px 1px #464545;
+  text-indent: 2rem;
+  background-color: #dfdffc;
+  border-radius: 2rem;
+  box-shadow: 1.5rem 1.5rem 1.5rem #464545;
+  
 }
 .btnpanel {
   display: flex;
@@ -182,6 +203,7 @@ p {
 }
 .btnpanel .ctaBtns #apple {
   width: 15%;
+  min-width: 75px;
   box-shadow: 1rem 1rem 1rem #464545;
 }
 .btnpanel .ctaBtns .login {
@@ -194,8 +216,10 @@ p {
   font-weight: bold;
   font-style: italic;
   text-shadow: 2px 2px 2px white;
+  min-width: 75px;
 }
 .btnpanel .ctaBtns #google {
+  min-width: 80px;
   width: 17%;
   box-shadow: 1rem 1rem 1rem #464545;
 }
@@ -203,7 +227,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 75px;
+  margin-top: 50px;
   margin-bottom: 25px;
 }
 footer .footer {
@@ -227,6 +251,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #dfdffc;
   border-radius: 2rem;
   box-shadow: 1.5rem 1.5rem 1.5rem #464545;
@@ -255,6 +280,7 @@ header {
 .head-container .head-center nav a {
   font-size: 2rem;
   width: 20%;
+  min-width: 75px;
   height: 40px;
   padding-top: 8px;
   text-align: center;
@@ -269,5 +295,103 @@ header {
 }
 .head-container .head-center h1 {
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
+  font-family: 'Sigmar One', cursive;
+  text-shadow: 2px 2px 2px #464545;
 }
+
+
+h2 {
+    margin: 0 auto;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 4rem;
+  }
+
+.videos-container {
+  background-image: url("/img/holdingHandsCircle.jpg");
+}
+@media (max-width: 500px) {
+  .head-container {
+    height: 120px;
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  .head-container .head-center nav a {
+    font-size: 1.5rem;
+    height: 25px;
+  
+    width: 25%;
+    min-width: 50px;
+    padding-top: 4px;
+  }
+}
+@media (max-width: 500px) {
+  .head-container .head-center h1 {
+    font-size: 3rem;
+  }
+}
+
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the videos by default */
+.mySlides {
+  display: none;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -25px;
+  
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 0px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 0px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+

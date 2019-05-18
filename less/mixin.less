@@ -6,18 +6,15 @@
   justify-content: @justify;
   align-items: @align;
 }
-
 .mobile-style() {
   .flex(center, center);
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
 }
-
 .mbl-width() {
   width:100%;
 }
-
 .boxstyle() {
   background-color: @objBack;
   border-radius: 2rem;
@@ -25,4 +22,16 @@
 }
 .boxshadow() {
   box-shadow: 1rem 1rem 1rem @shadow;
+}
+.textstyle() {
+  text-shadow: 2px 2px 2px @shadow;
+}
+.smtextstyle() {
+  text-shadow: 1px 1px 1px @shadow;
+}
+.headingfont() {
+  font-family: 'Sigmar One', cursive;
+}
+.pfont() {
+  font-family: 'Boogaloo', cursive;
 }
