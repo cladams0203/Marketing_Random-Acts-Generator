@@ -174,7 +174,7 @@ p {
   text-shadow: 1px 1px 1px #464545;
   text-indent: 2rem;
 }
-.btnpanel {
+ .btnpanel {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -290,6 +290,7 @@ h2 {
   text-align: center;
   font-size: 4rem;
 }
+
 .videos-container {
   background-image: url("/img/holdingHandsCircle.jpg");
 }
@@ -320,4 +321,78 @@ h2 {
   100% {
     opacity: 1;
   }
+}
+.slideshow-container {
+  max-width: 700px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the videos by default */
+.mySlides {
+  display: none;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -25px;
+  
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 0px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 0px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.paragraph{font-size: 2rem;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 60%;
+  text-align: center;
+  font-family: 'Boogaloo', cursive;
+  text-shadow: 1px 1px 1px #464545;
+  text-indent: 2rem;
+  background-color: #dfdffc;
+  border-radius: 2rem;
+  box-shadow: 1.5rem 1.5rem 1.5rem #464545;
 }
