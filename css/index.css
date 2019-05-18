@@ -313,3 +313,11 @@ h2 {
     font-size: 3rem;
   }
 }
+@keyframes trans {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
