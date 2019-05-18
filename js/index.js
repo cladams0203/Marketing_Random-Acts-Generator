@@ -9,6 +9,14 @@ class Fade {
     })
   }
   fade() {
+    let opa = 0.1;
+    let count = 0.1;
+    while (opa < 1) {
+    this.element.style.opacity = `'${opa}'`;
+    let timer = setInterval(function() {
+
+    })
+  } 
   }
 }
 
