@@ -139,6 +139,8 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  animation-name: trans;
+  animation-duration: 1s;
 }
 .main-content {
   display: flex;

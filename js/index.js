@@ -2,9 +2,11 @@
 class Fade {
   constructor(element) {
     this.element = element;
-    
+    this.dataNum = this.element.dataset.btn;
     this.element.addEventListener('click', (e) => {
-      e.preventDefault();
+      if(this.dataNum == 1) {
+        e.preventDefault();
+      }
       this.element.style.opacity = 0;
       let opa = 0;
       let timer = setInterval(function() {
@@ -20,8 +22,7 @@ class Fade {
           }
         }
       }, 20);
-    
-    })
+    });
   }
 }
 
