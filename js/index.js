@@ -4,23 +4,28 @@ class Fade {
     this.element = element;
     
     this.element.addEventListener('click', (e) => {
-    e.preventDefault();
-    this.fade();
+      e.preventDefault();
+      this.element.style.opacity = 0;
+      let opa = 0;
+      let timer = setInterval(function() {
+        for (let i = 0; i < 1; i ++) {
+          opa = opa + 0.1;
+          console.log(opa);
+          if (opa < .90) {
+          element.style.opacity = opa;
+          console.log(opa);
+          }
+          else if (opa > 1) {
+            clearInterval(timer);
+          }
+        }
+      }, 20);
+    
     })
-  }
-  fade() {
-    let opa = 0.1;
-    let count = 0.1;
-    while (opa < 1) {
-    this.element.style.opacity = `'${opa}'`;
-    let timer = setInterval(function() {
-
-    })
-  } 
   }
 }
 
-let tags = document.querySelectorAll('.action');
+let tags = document.querySelectorAll('.btn-fade');
 tags.forEach(tab => {
   return new Fade(tab);
   // console.log(tab);
