@@ -2,12 +2,11 @@
 class Fade {
   constructor(element) {
     this.element = element;
-    this.dataNum = this.element.dataset.btn;
     this.element.addEventListener('click', (e) => {
-      if(this.dataNum == 1) {
-        e.preventDefault();
+      if (this.element.classList.contains('active')) {
+      e.preventDefault();
       }
-      this.element.style.opacity = 0;
+    this.element.style.opacity = 0;
       let opa = 0;
       let timer = setInterval(function() {
         for (let i = 0; i < 1; i ++) {
@@ -26,10 +25,27 @@ class Fade {
   }
 }
 
-let tags = document.querySelectorAll('.btn-fade');
-tags.forEach(tab => {
+class Cursor {
+  constructor(element) {
+    this.element = element;
+    this.element.addEventListener('mouseover', () => {
+      this.point();
+    })
+  }
+  point() {
+    this.element.style.cursor = 'pointer';
+  }
+}
+
+const tags = document.querySelectorAll('.btn-fade');
+Array.from(tags).forEach(tab => {
   return new Fade(tab);
   // console.log(tab);
 });
+
+Array.from(tags).forEach((btn) => {
+  return new Cursor(btn);
+});
+
 
 
