@@ -333,6 +333,19 @@ h2 {
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+.paragraph {
+  font-size: 2rem;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 60%;
+  text-align: center;
+  font-family: 'Boogaloo', cursive;
+  text-shadow: 1px 1px 1px #464545;
+  text-indent: 2rem;
+  background-color: #dfdffc;
+  border-radius: 2rem;
+  box-shadow: 1.5rem 1.5rem 1.5rem #464545;
+}
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
