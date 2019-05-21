@@ -304,6 +304,8 @@ h2 {
 /* Hide the videos by default */
 .mySlides {
   display: none;
+  justify-content: center;
+  align-items: center;
 }
 /* Next & previous buttons */
 .prev,
@@ -337,9 +339,13 @@ h2 {
 }
 .paragraph {
   font-size: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   margin: 0 auto;
-  margin-top: 50px;
-  width: 60%;
+  width: 70%;
+  margin-top: 40px;
+  padding: 30px;
   text-align: center;
   font-family: 'Boogaloo', cursive;
   text-shadow: 1px 1px 1px #464545;
@@ -379,7 +385,7 @@ h2 {
     opacity: 1;
   }
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 500px) {
   .prev,
   .next,
   .text {
