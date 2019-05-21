@@ -3,8 +3,8 @@ class Fade {
   constructor(element) {
     this.element = element;
     this.element.addEventListener('click', (e) => {
-      if (this.element.classList.contains('active')) {
-      e.preventDefault();
+      if (this.element.classList.contains('act')) {
+      e.preventDefault()
       }
     this.element.style.opacity = 0;
       let opa = 0;
@@ -46,6 +46,9 @@ Array.from(tags).forEach(tab => {
 Array.from(tags).forEach((btn) => {
   return new Cursor(btn);
 });
+
+
+
 
 
 
