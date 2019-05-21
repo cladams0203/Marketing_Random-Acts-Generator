@@ -304,6 +304,8 @@ h2 {
 /* Hide the videos by default */
 .mySlides {
   display: none;
+  justify-content: center;
+  align-items: center;
 }
 /* Next & previous buttons */
 .prev,
@@ -413,4 +415,53 @@ h2 {
   100% {
     opacity: 1;
   }
+}
+.contact {
+  background-image: url("/img/heartTile.jpg");
+}
+.main-contact {
+  margin: 0 auto;
+  width: 85%;
+  height: inherit;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.main-contact h2 {
+  margin: 0;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #464545;
+}
+.main-contact .contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  font-size: 2rem;
+  font-family: 'Boogaloo', cursive;
+  text-shadow: 1px 1px 1px #464545;
+}
+.main-contact .contact-form input {
+  width: 60%;
+  box-shadow: 1rem 1rem 1rem #464545;
+}
+.main-contact .contact-form .submit {
+  width: 15%;
+  margin-top: 10px;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: #fad190;
+  box-shadow: 1rem 1rem 1rem #464545;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 2px 2px white;
+  min-width: 85px;
+}
+.main-contact .contact-form textarea {
+  width: 60%;
+  height: 100px;
+  box-shadow: 1rem 1rem 1rem #464545;
 }
