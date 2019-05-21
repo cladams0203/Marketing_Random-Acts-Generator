@@ -444,7 +444,7 @@ h2 {
   text-shadow: 1px 1px 1px #464545;
 }
 .main-contact .contact-form input {
-  width: 50%;
+  width: 60%;
   box-shadow: 1rem 1rem 1rem #464545;
 }
 .main-contact .contact-form .submit {
@@ -458,10 +458,10 @@ h2 {
   font-weight: bold;
   font-style: italic;
   text-shadow: 2px 2px 2px white;
-  min-width: 75px;
+  min-width: 85px;
 }
 .main-contact .contact-form textarea {
-  width: 50%;
+  width: 60%;
   height: 100px;
   box-shadow: 1rem 1rem 1rem #464545;
 }
