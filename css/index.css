@@ -392,26 +392,6 @@ h2 {
     font-size: 11px;
   }
 }
-@media (max-width: 500px) {
-  .head-container {
-    height: 120px;
-    width: 95%;
-  }
-}
-@media (max-width: 500px) {
-  .head-container .head-center nav a {
-    font-size: 1.5rem;
-    height: 25px;
-    width: 30%;
-    min-width: 50px;
-    padding-top: 4px;
-  }
-}
-@media (max-width: 500px) {
-  .head-container .head-center h1 {
-    font-size: 3rem;
-  }
-}
 @keyframes trans {
   0% {
     opacity: 0;
@@ -468,4 +448,38 @@ h2 {
   width: 60%;
   height: 100px;
   box-shadow: 1rem 1rem 1rem #464545;
+}
+@media (max-width: 500px) {
+  .head-container {
+    height: 120px;
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  .head-container .head-center nav a {
+    font-size: 1.5rem;
+    height: 25px;
+    width: 30%;
+    min-width: 50px;
+    padding-top: 4px;
+  }
+}
+@media (max-width: 500px) {
+  .head-container .head-center h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 500px) {
+  .main-contact {
+    width: 95%;
+  }
+  .main-contact .contact-form {
+    width: 95%;
+  }
+  .main-contact .contact-form input {
+    width: 75%;
+  }
+  .main-contact .contact-form textarea {
+    width: 75%;
+  }
 }
