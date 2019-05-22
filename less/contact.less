@@ -1,0 +1,46 @@
+.contact {
+  background-image: url("/img/heartTile.jpg");
+}
+
+.main-contact {
+  margin: 0 auto;
+  width: 85%;
+  height: inherit;
+  .flex(space-evenly, center);
+  flex-direction: column;
+  h2 {
+    margin: 0;
+    font-weight: bold;
+    .textstyle();
+  }
+  .contact-form {
+    .flex(center, center);
+    flex-direction: column;
+    width:60%;
+    font-size: 2rem;
+    .pfont();
+    .smtextstyle();
+    input {
+      width: 60%;
+      .boxshadow();
+    }
+    .submit {
+      width: 15%;
+      margin-top: 10px;
+      height: 4rem;
+      border-radius: 1rem;
+      background-color: @btncolor;
+      .boxshadow();
+      font-size: 2rem;
+      font-weight: bold;
+      font-style: italic;
+      text-shadow: 2px 2px 2px white;
+      min-width: 85px;
+    }
+    textarea {
+      width: 60%;
+      height: 100px;
+      .boxshadow();
+    }
+  }
+}

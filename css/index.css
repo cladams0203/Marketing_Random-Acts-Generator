@@ -392,6 +392,63 @@ h2 {
     font-size: 11px;
   }
 }
+@keyframes trans {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.contact {
+  background-image: url("/img/heartTile.jpg");
+}
+.main-contact {
+  margin: 0 auto;
+  width: 85%;
+  height: inherit;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.main-contact h2 {
+  margin: 0;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px #464545;
+}
+.main-contact .contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  font-size: 2rem;
+  font-family: 'Boogaloo', cursive;
+  text-shadow: 1px 1px 1px #464545;
+}
+.main-contact .contact-form input {
+  width: 60%;
+  box-shadow: 1rem 1rem 1rem #464545;
+}
+.main-contact .contact-form .submit {
+  width: 15%;
+  margin-top: 10px;
+  height: 4rem;
+  border-radius: 1rem;
+  background-color: #fad190;
+  box-shadow: 1rem 1rem 1rem #464545;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 2px 2px 2px white;
+  min-width: 85px;
+}
+.main-contact .contact-form textarea {
+  width: 60%;
+  height: 100px;
+  box-shadow: 1rem 1rem 1rem #464545;
+}
 @media (max-width: 500px) {
   .head-container {
     height: 120px;
@@ -412,11 +469,17 @@ h2 {
     font-size: 3rem;
   }
 }
-@keyframes trans {
-  0% {
-    opacity: 0;
+@media (max-width: 500px) {
+  .main-contact {
+    width: 95%;
   }
-  100% {
-    opacity: 1;
+  .main-contact .contact-form {
+    width: 95%;
+  }
+  .main-contact .contact-form input {
+    width: 75%;
+  }
+  .main-contact .contact-form textarea {
+    width: 75%;
   }
 }
