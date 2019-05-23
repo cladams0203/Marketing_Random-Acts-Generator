@@ -53,7 +53,7 @@ class Popup {
     //create html elements
     this.popContent = document.createElement('div');
     this.closeDiv = document.createElement('div')
-    this.close = document.createElement('span');
+    this.close = document.createElement('i');
     this.login = document.createElement('form');
     this.uName = document.createElement('input');
     this.uPass = document.createElement('input');
@@ -62,6 +62,8 @@ class Popup {
     //add classes
     this.element.classList.add('pop-contain');
     this.popContent.classList.add('pop-content');
+    this.close.classList.add('fa');
+    this.close.classList.add('fa-close');
     this.close.classList.add('close');
     this.closeDiv.classList.add('close-div');
     this.login.classList.add('form');
@@ -72,7 +74,7 @@ class Popup {
     this.uName.setAttribute('type', 'text');
     this.uPass.setAttribute('type', 'password');
     //text content for form
-    this.close.textContent = 'x';
+    // this.close.textContent = 'x';
     this.textUser = 'User Name :  ';
     this.textPass = 'Password :  ';
     this.submit.textContent = 'Submit';
