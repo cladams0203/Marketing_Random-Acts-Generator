@@ -24,4 +24,31 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "flex"; 
   dots[slideIndex-1].className += "active";
 }
+//responsive iframe
+class Responsive {
+  constructor(element) {
+    this.element = element;
+    this.winSize = window.matchMedia('(max-width: 500px');
+    this.element.addEventListener('load', () => {
+      if (this.winSize.matches) {
+        this.widthChange();
+      }
+    })
+    this.element.addEventListener('resize', () => {
+      if (this.winSize.matches) {
+        this.widthChange();
+      }
+    })
+  }
+  widthChange() {
+    this.element.setAttribute('width', '200');
+    this.element.setAttribute('height', '150');
+  }
+}
+
+const frames = document.querySelectorAll('iframe');
+Array.from(frames).forEach((e) => {
+  return new Responsive(e);
+})
+
 
