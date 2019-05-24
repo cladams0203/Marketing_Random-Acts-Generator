@@ -38,7 +38,6 @@ class Cursor {
 const tags = document.querySelectorAll('.btn-fade');
 Array.from(tags).forEach(tab => {
   return new Fade(tab);
-  // console.log(tab);
 });
 
 Array.from(tags).forEach((btn) => {
@@ -69,15 +68,17 @@ class Popup {
     this.login.classList.add('form');
     this.uName.classList.add('login-input');
     this.uPass.classList.add('login-input');
-    this.submit.classList.add('login-submit')
+    this.submit.classList.add('login-submit');
+
     //add attributes for inputs
     this.uName.setAttribute('type', 'text');
     this.uPass.setAttribute('type', 'password');
+   
     //text content for form
-    // this.close.textContent = 'x';
     this.textUser = 'User Name :  ';
     this.textPass = 'Password :  ';
     this.submit.textContent = 'Submit';
+
     //insert elements
     this.element.append(this.popContent);
     this.popContent.append(this.closeDiv);
@@ -88,6 +89,7 @@ class Popup {
     this.login.append(this.textPass);
     this.login.append(this.uPass);
     this.popContent.append(this.submit);
+
     //close window
     this.close.addEventListener('click', () => {
       this.winClose();
